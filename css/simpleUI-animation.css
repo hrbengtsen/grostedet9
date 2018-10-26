@@ -306,7 +306,7 @@
 
 .animate-fromTop {
     position: relative;
-    animation: fromTop 0.4s
+    animation: fromTop .7s
 }
 @keyframes fromTop {
     from {
@@ -381,7 +381,7 @@
 
 .animate-fromBottom {
     position: relative;
-    animation: fromBottom 0.4s
+    animation: fromBottom .7s
 }
 @keyframes fromBottom {
     from {

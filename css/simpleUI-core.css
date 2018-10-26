@@ -892,7 +892,7 @@ hr.content {
     margin-bottom: 24px!important
 }
 .margin-left {
-    margin-left: 16px!important
+    margin-left: 6px!important
 }
 .margin-right {
     margin-right: 16px!important
@@ -946,7 +946,7 @@ hr.content {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 100%;
   color: #fff
 }
 .kontakt-hero {
@@ -966,6 +966,20 @@ hr.content {
 /* Custom background image styles */
 .stedet {
   background-image: url("../img/stedet.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  color: #fff
+}
+.natur {
+  background-image: url("../img/natur.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  color: #fff
+}
+.strand {
+  background-image: url("../img/strand.jpg");
   background-size: cover;
   background-position: center;
   height: 350px;

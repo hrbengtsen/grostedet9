@@ -45,6 +45,11 @@
 .hover-border-gray-dark:hover {
     border-color: #222!important
 }
+.gray-dark-opacity {
+    color: #fff;
+    background-color: rgb(34, 34, 34)!important;
+    background-color: rgba(34, 34, 34, 0.7)!important
+}
 
 .green,
 .hover-green:hover {
