@@ -6,7 +6,7 @@
 
 .white,
 .hover-white:hover {
-    color: #222;
+    color: #484848;
     background-color: #fff!important
 }
 .text-white,
@@ -20,7 +20,7 @@
 
 .gray,
 .hover-gray:hover {
-    color: #222;
+    color: #484848;
     background-color: #dfdcc3!important
 }
 .text-gray,
@@ -35,20 +35,20 @@
 .gray-dark,
 .hover-gray-dark:hover {
     color: #fff;
-    background-color: #222!important
+    background-color: #484848!important
 }
 .text-gray-dark,
 .hover-text-gray-dark:hover {
-    color: #222!important
+    color: #484848!important
 }
 .border-gray-dark,
 .hover-border-gray-dark:hover {
-    border-color: #222!important
+    border-color: #484848!important
 }
 .gray-dark-opacity {
     color: #fff;
-    background-color: rgb(34, 34, 34)!important;
-    background-color: rgba(34, 34, 34, 0.7)!important
+    background-color: rgb(72, 72, 72)!important;
+    background-color: rgba(72, 72, 72, 0.7)!important
 }
 
 .green,

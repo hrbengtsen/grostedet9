@@ -419,7 +419,7 @@
     transition: box-shadow .2s ease, color .2s ease-out, background .2s ease-in
 }
 .animate-shadow:hover, .animate-shadow-colour:hover {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
 .animate-link, .animate-link-colour, .link-current {
