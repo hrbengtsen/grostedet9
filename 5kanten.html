@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Værelser - 5 Kanten</title>
+
+  <!-- Import Google Fonts, Icons & simpleUI CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,800">
+  <link type="text/css" rel="stylesheet" href="css/simpleUI-core.css"/>
+  <link type="text/css" rel="stylesheet" href="css/simpleUI-grid.css"/>
+  <link type="text/css" rel="stylesheet" href="css/simpleUI-colour.css"/>
+  <link type="text/css" rel="stylesheet" href="css/simpleUI-animation.css"/>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <main class="femkanten">
+    <header class="fixed-top">
+      <div class="bar text-white padding">
+          <a href="index.html" class="bar-item margin bold bottombar border-yellow" style="font-size: 18px">Grostedet<span class="text-yellow">9</span></a>
+
+          <div class="right hide-small hide-medium yellow round-xxlarge">
+            <div class="dropdown-hover">
+              <a href="#" class="button margin hover-text-gray text-white animate-colour">Værelser<span class="material-icons vert-align">keyboard_arrow_down</span></a>
+              <div class="dropdown-content bar-block yellow animate-fadeInDown" style="margin-left: 25px">
+                <a href="annekset.html" class="bar-item margin hover-text-gray text-white animate-colour">Annekset<span class="material-icons vert-align">keyboard_arrow_right</span></a>
+                <a href="5kanten.html" class="bar-item margin hover-text-gray text-red animate-colour">5 Kanten<span class="material-icons vert-align">keyboard_arrow_right</span></a>
+              </div>
+            </div>
+
+            <a href="om-grostedet9.html" class="bar-item margin hover-text-gray text-white animate-colour">Om Grostedet9</a>
+            <a href="kontakt.html" class="bar-item margin hover-text-gray text-white animate-colour">Kontakt</a>
+            <a href="#" class="bar-item margin hover-text-gray text-white animate-colour"><i class="fab fa-facebook" style="font-size: 24px"></i></a>
+          </div>
+      </div>
+    </header>
+
+    <div class="content" style="padding: 160px 16px 0px; left: 0">
+      <div class="padding">
+        <h2>5 Kanten</h2>
+        <h4>Udforsk hvad 4-6 personers<br>
+        værelset, 5 Kanten, har at tilbyde.</h4>
+      </div>
+    </div>
+  </main>
+
+  <!-- Værelser spotlight -->
+  <div class="content section">
+    <div class="row-padding">
+      <!-- Annekset -->
+      <div class="col l6 m6 s12">
+        <div class="margin display-container">
+          <img class="image round femkantenSlide" src="img/femkanten/femkantenSlide1.jpg" alt="#">
+          <img class="image round femkantenSlide" src="img/femkanten/femkantenSlide2.jpg" alt="#">
+          <img class="image round femkantenSlide" src="img/femkanten/femkantenSlide3.jpg" alt="#">
+          <img class="image round femkantenSlide" src="img/femkanten/femkantenSlide4.jpg" alt="#">
+          <img class="image round femkantenSlide" src="img/femkanten/femkantenSlide5.jpg" alt="#">
+          <img class="image round femkantenSlide" src="img/5kanten.jpg" alt="#">
+
+          <button class="button hover-gray-dark-opacity round text-white animate-colour material-icons display-left padding-64 xxlarge" onclick="changeImg(-1)">keyboard_arrow_left</button>
+          <button class="button hover-gray-dark-opacity round text-white animate-colour material-icons display-right padding-64 xxlarge" onclick="changeImg(1)">keyboard_arrow_right</button>
+        </div>
+      </div>
+
+      <!-- 5 Kanten -->
+      <div class="col l6 m6 s12">
+        <div class="margin row">
+          <p class="bold">Find priser for 5 Kanten</p>
+          <div class="col l6 m6 s12">
+            <select class="select" name="option" id="days">
+              <option value="" disabled selected>Antal dage</option>
+              <option value="1">1 dag</option>
+              <option value="2">2 dage</option>
+              <option value="3">3 dage</option>
+              <option value="4">4 dage</option>
+              <option value="5">5 dage</option>
+              <option value="6">6 dage</option>
+              <option value="7">1 uge</option>
+            </select>
+          </div>
+
+          <div class="col l6 m6 s12">
+            <select class="select" name="option" id="persons">
+              <option value="" disabled selected>Antal personer</option>
+              <option value="2">2 personer</option>
+              <option value="3">3 personer</option>
+              <option value="4">4-6 personer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="margin row">
+          <button class="button red hover-yellow animate-colour round margin-top" onclick="searchPrice()">Søg pris</button>
+        </div>
+
+        <div class="margin margin-top row">
+          <p class="col l6 m6 s12 bold">Pris:</p>
+          <h4 class="col l6 m6 s12" id="priceId">0 kr. DKK</h4>
+        </div>
+
+        <div class="margin row">
+          <p class="col l6 m6 s12"><a href="kontakt.html" class="text-yellow animate-colour hover-text-red bold">Book 5 Kanten<span class="material-icons vert-align">keyboard_arrow_right</span></a></p>
+          <p class="col l6 m6 s12"><a href="javascript:void(0)" class="text-red animate-colour hover-text-yellow bold" onclick="showSeason('season')">Season priser<span class="material-icons vert-align" id="seasonIcon">keyboard_arrow_down</span></a></p>
+          <div id="season" class="hide">
+            <p>I season (ugerne 28-29-30-31) følger alle bookinger priserne for 4-6 personer!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Værelser spotlight -->
+  <div class="content section">
+    <h3 class="center">Faciliteter</h3>
+    <p class="center">5 Kantens forskellige egenskaber.</p>
+
+    <div class="row-padding center">
+      <div class="col l4 m4 s6">
+        <p>25 m2 + hems</p>
+      </div>
+
+      <div class="col l4 m4 s6">
+        <p>6 senge</p>
+      </div>
+
+      <div class="col l4 m4 s6">
+        <p>1 bad</p>
+      </div>
+    </div>
+
+    <div class="row-padding center">
+      <div class="col l4 m4 s6">
+        <p>Køkken</p>
+      </div>
+
+      <div class="col l4 m4 s6">
+        <p>TV</p>
+      </div>
+
+      <div class="col l4 m4 s6">
+        <p>Wifi</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kort -->
+  <div class="content section">
+    <div class="row-padding margin">
+      <div class="col l12 m12 s12">
+        <h3 class="subSection">Find os</h3>
+        <div class="round" style="overflow: hidden">
+          <iframe src="https://maps.google.com/maps?q=grostedet%209&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" width="100%" height="350" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer 1 -->
+  <hr class="content">
+
+  <footer class="bar-block padding-32 content">
+    <div class="row padding-16 container margin">
+      <div class="col l4 m4 s12">
+        <a href="index.html" class="bar-item margin bold">Grostedet9</a>
+        <p class="bar-item margin">
+          Birgit Bengtsen <br>
+          CVR: 99988877 <br>
+          Grostedet 9 <br>
+          8400 Ebeltoft <br>
+        </p>
+      </div>
+
+      <div class="col l4 m4 s12">
+        <p class="bar-item margin bold">Information</p>
+        <a href="om-grostedet9.html" class="bar-item margin hover-text-gray animate-colour">Om Grostedet9</a>
+        <a href="kontakt.html" class="bar-item margin hover-text-gray animate-colour">Kontakt</a>
+      </div>
+
+      <div class="col l4 m4 s12">
+        <p class="bar-item margin bold">Værelser</p>
+        <a href="annekset.html" class="bar-item margin hover-text-gray animate-colour">Annekset</a>
+        <a href="5kanten.html" class="bar-item margin hover-text-gray animate-colour">5 Kanten</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer 2 -->
+  <hr class="content">
+
+  <footer class="bar content">
+    <div class="center">
+      <p>Copyright © 2018 Grostedet9 · Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Slideshow
+    let slideIndex = 1;
+    showImg(slideIndex);
+
+    function changeImg(n) {
+      showImg(slideIndex += n);
+    }
+
+    function showImg(n) {
+      let i;
+      let e = document.getElementsByClassName("femkantenSlide");
+
+      if (n > e.length) { slideIndex = 1; }
+      else if (n < 1) { slideIndex = e.length; }
+
+      for (i = 0; i < e.length; i++) {
+        e[i].style.display = "none";
+      }
+      e[slideIndex - 1].style.display = "block";
+    }
+
+    // Search prices
+    let ePrice = document.getElementById("priceId");
+    let eDays = document.getElementById("days");
+    let ePersons = document.getElementById("persons");
+
+    let price = "0";
+
+    function searchPrice() {
+      let days = eDays.value;
+      let persons = ePersons.value;
+
+      switch (Number(persons)) {
+        case 2:
+          switch (Number(days)) {
+            case 1:
+              price = "450";
+              break;
+
+            case 2:
+              price = "800";
+              break;
+
+            case 3:
+              price = "1050";
+              break;
+
+            case 4:
+            case 5:
+              price = "1400";
+              break;
+
+            case 6:
+              price = "1750";
+              break;
+
+            case 7:
+              price = "2100";
+              break;
+          }
+          break;
+
+        case 3:
+          switch (Number(days)) {
+            case 1:
+              price = "600";
+              break;
+
+            case 2:
+              price = "1200";
+              break;
+
+            case 3:
+              price = "1650";
+              break;
+
+            case 4:
+            case 5:
+              price = "2200";
+              break;
+
+            case 6:
+              price = "2750";
+              break;
+
+            case 7:
+              price = "3300";
+              break;
+          }
+          break;
+
+          case 4:
+            switch (Number(days)) {
+              case 1:
+                price = "800";
+                break;
+
+              case 2:
+                price = "1600";
+                break;
+
+              case 3:
+                price = "2250";
+                break;
+
+              case 4:
+              case 5:
+                price = "3000";
+                break;
+
+              case 6:
+                price = "3750";
+                break;
+
+              case 7:
+                price = "4500";
+                break;
+            }
+            break;
+      }
+      ePrice.innerHTML = price + " kr. DKK";
+    }
+
+    // Season text
+    function showSeason(id) {
+      let e = document.getElementById(id);
+      let icon = document.getElementById("seasonIcon");
+      if (e.className.indexOf("show") == -1) {
+          e.className += " show";
+          icon.innerHTML = "keyboard_arrow_up";
+      } else {
+          e.className = e.className.replace(" show", "");
+          icon.innerHTML = "keyboard_arrow_down";
+      }
+    }
+  </script>
+</body>
+</html>

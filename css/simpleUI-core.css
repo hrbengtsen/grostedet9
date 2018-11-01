@@ -672,10 +672,10 @@ hr.content {
 }
 .display-left {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 0%;
     transform: translate(0%, -50%);
-    -ms-transform: translate(-0%, -50%)
+    -ms-transform: translate(0%, -50%)
 }
 .display-right {
     position: absolute;
@@ -697,6 +697,9 @@ hr.content {
     bottom: 0;
     transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%)
+}
+.display-container {
+  position: relative
 }
 .display-container:hover .display-hover {
     display: block
@@ -940,6 +943,12 @@ hr.content {
 .right {
     float: right!important
 }
+.select {
+    padding: 9px 0;
+    width: 75%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
 /* Hero */
 .hero {
   background-image: url("../img/hero.jpg");
@@ -957,6 +966,20 @@ hr.content {
 }
 .om-hero {
   background-image: url("../img/stedet.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: #fff
+}
+.annekset {
+  background-image: url("../img/annekset.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: #fff
+}
+.femkanten {
+  background-image: url("../img/5kanten.jpg");
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -990,4 +1013,7 @@ hr.content {
   background-position: center;
   height: 350px;
   color: #fff
+}
+.anneksSlide {
+  display: none
 }

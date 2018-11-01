@@ -45,10 +45,11 @@
 .hover-border-gray-dark:hover {
     border-color: #484848!important
 }
-.gray-dark-opacity {
+.gray-dark-opacity,
+.hover-gray-dark-opacity:hover {
     color: #fff;
     background-color: rgb(72, 72, 72)!important;
-    background-color: rgba(72, 72, 72, 0.7)!important
+    background-color: rgba(72, 72, 72, 0.5)!important
 }
 
 .green,
