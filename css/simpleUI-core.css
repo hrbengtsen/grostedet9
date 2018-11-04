@@ -953,7 +953,7 @@ hr.content {
 .hero {
   background-image: url("../img/hero.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 50% 80%;
   height: 100%;
   color: #fff
 }

@@ -35,12 +35,46 @@
             <a href="kontakt.html" class="bar-item margin hover-text-gray text-white animate-colour">Kontakt</a>
             <a href="#" class="bar-item margin hover-text-gray text-white animate-colour"><i class="fab fa-facebook" style="font-size: 24px"></i></a>
           </div>
+
+          <!-- Custom animated hamburger with styles to #navIcon & span - for mobile nav -->
+          <a href="javascript:void(0);" onclick="toggleMobileNav()" class="right bar-item margin animate-colour hide-large yellow circle">
+            <div id="navIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+          </a>
+      </div>
+    </header>
+
+    <!-- Extra mobile nav -->
+    <header id="navMobile" class="hide-large content sidebar animate-fromRight yellow" style="display: none">
+      <div class="bar-block margin padding container">
+        <a href="javascript:void(0);" onclick="toggleMobileNav()" class="right bar-item hover-text-gray animate-colour circle material-icons" style="font-size: 32px">close</a>
+
+        <div style="width: 300px">
+          <a href="annekset.html" class="bar-item margin hover-text-gray text-white animate-colour">Annekset</a>
+          <a href="5kanten.html" class="bar-item margin hover-text-gray text-white animate-colour">5 Kanten</a>
+
+          <a href="om-grostedet9.html" class="bar-item margin hover-text-gray text-white animate-colour">Om Grostedet9</a>
+          <a href="kontakt.html" class="bar-item margin hover-text-gray text-white animate-colour">Kontakt</a>
+          <a href="#" class="bar-item margin hover-text-gray text-white animate-colour"><i class="fab fa-facebook" style="font-size: 24px"></i></a>
+        </div>
       </div>
     </header>
 
     <div class="content animate-fadeInUp" style="padding: 200px 16px 0px; left: 0">
-      <div class="padding" style="width: 600px">
+      <div class="padding hide-small" style="width: 600px">
         <h2>Bed & Breakfast<br> fra 300 kr. per nat</h2>
+        <a href="kontakt.html"><button class="button padding-large red round animate-colour hover-yellow">Bestil ferie</button></a>
+        <a href="om-grostedet9.html"><button class="button padding-large yellow round margin-left animate-colour hover-red">Udforsk stedet</button></a>
+
+        <p class="sectionTop large"><span class="material-icons vert-align" style="font-size: 32px">keyboard_arrow_right</span>Været her før? <a href="#" class="text-yellow animate-colour hover-text-red">Anmeld os</a></p>
+      </div>
+
+      <div class="padding hide-large hide-medium" style="width: 360px">
+        <h3>Bed & Breakfast<br> fra 300 kr. per nat</h3>
         <a href="kontakt.html"><button class="button padding-large red round animate-colour hover-yellow">Bestil ferie</button></a>
         <a href="om-grostedet9.html"><button class="button padding-large yellow round margin-left animate-colour hover-red">Udforsk stedet</button></a>
 
@@ -55,11 +89,11 @@
       <div class="col l12 m12 s12">
         <h3 class="subSection">Rabat</h3>
         <div class="row round shadow" style="overflow: hidden">
-          <div class="col l2 m2 s2">
+          <div class="col l2 m3 s2">
             <img class="image vert-align" src="img/discount.jpg" alt="#" style="display: block">
           </div>
 
-          <div class="col l10 m10 s10">
+          <div class="col l10 m9 s10">
             <div class="margin-left padding-small">
               <h4>Få 5. døgn gratis ved booking</h4>
               <p>Hos Grostedet 9 er der rabat fra 2. overnatning og 5. døgn er gratis! <a href="kontakt.html" class="text-yellow animate-colour hover-text-red bold">Book nu<span class="material-icons vert-align">keyboard_arrow_right</span></a></p>
@@ -73,7 +107,7 @@
   <!-- Værelser spotlight -->
   <div class="content section">
     <h3 class="center">Leje Muligheder</h3>
-    <p class="center">Grostedet 9 tilbyder 2 muligheder for leje af bolig.</p>
+    <p class="center container">Grostedet 9 tilbyder 2 muligheder for leje af bolig.</p>
 
     <div class="row-padding">
       <!-- Annekset -->
@@ -179,5 +213,22 @@
       <p>Copyright © 2018 Grostedet9 · Alle rettigheder forbeholdes.</p>
     </div>
   </footer>
+
+  <script>
+    // Change navBar
+    function toggleMobileNav() {
+      let navMobile = document.getElementById("navMobile");
+      let navIcon = document.getElementById("navIcon");
+
+      if (navMobile.style.display == "none") {
+        navMobile.style.width = "100%";
+        navMobile.style.display = "block";
+      }
+      else {
+        navMobile.style.display = "none";
+      }
+      navIcon.classList.toggle("open");
+    }
+  </script>
 </body>
 </html>
