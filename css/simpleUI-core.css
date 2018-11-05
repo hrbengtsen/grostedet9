@@ -533,7 +533,7 @@ hr.content {
     display: inline-block!important
 }
 /* Responsive media queries for styles */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .modal-content {
         margin: 0 10px;
         width: auto!important
@@ -589,7 +589,7 @@ hr.content {
         display: block!important
     }
 }
-@media (max-width: 992px) and (min-width: 601px) {
+@media (max-width: 992px) and (min-width: 768px) {
     .hide-medium {
         display: none!important
     }
@@ -907,6 +907,10 @@ hr.content {
 }
 .padding-large {
     padding: 12px 24px!important
+}
+.padding-8 {
+    padding-top: 6px!important;
+    padding-bottom: 6px!important
 }
 .padding-16 {
     padding-top: 16px!important;
