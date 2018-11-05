@@ -891,7 +891,7 @@ hr.content {
     margin-top: 24px!important
 }
 .margin-bottom {
-    margin-bottom: 24px!important
+    margin-bottom: 2px!important
 }
 .margin-left {
     margin-left: 24px!important
@@ -908,9 +908,9 @@ hr.content {
 .padding-large {
     padding: 12px 24px!important
 }
-.padding-8 {
-    padding-top: 6px!important;
-    padding-bottom: 6px!important
+.padding-6 {
+    padding-top: 5px!important;
+    padding-bottom: 5px!important
 }
 .padding-16 {
     padding-top: 16px!important;

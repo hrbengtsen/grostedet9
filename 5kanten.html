@@ -27,7 +27,7 @@
               <a href="#" class="button margin hover-text-gray text-white animate-colour">Værelser<span class="material-icons vert-align">keyboard_arrow_down</span></a>
               <div class="dropdown-content bar-block yellow animate-fadeInDown" style="margin-left: 25px">
                 <a href="annekset.html" class="bar-item margin hover-text-gray text-white animate-colour">Annekset<span class="material-icons vert-align">keyboard_arrow_right</span></a>
-                <a href="5kanten.html" class="bar-item margin hover-text-gray text-red animate-colour">5 Kanten<span class="material-icons vert-align">keyboard_arrow_right</span></a>
+                <a href="5kanten.html" class="bar-item margin hover-text-gray text-white animate-colour">5 Kanten<span class="material-icons vert-align">keyboard_arrow_right</span></a>
               </div>
             </div>
 
@@ -35,6 +35,32 @@
             <a href="kontakt.html" class="bar-item margin hover-text-gray text-white animate-colour">Kontakt</a>
             <a href="#" class="bar-item margin hover-text-gray text-white animate-colour"><i class="fab fa-facebook" style="font-size: 24px"></i></a>
           </div>
+
+          <!-- Custom animated hamburger with styles to #navIcon & span - for mobile nav -->
+          <a href="javascript:void(0);" onclick="toggleMobileNav()" class="right bar-item margin animate-colour hide-large yellow circle">
+            <div id="navIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+          </a>
+      </div>
+    </header>
+
+    <!-- Extra mobile nav -->
+    <header id="navMobile" class="hide-large content sidebar animate-fromRight yellow" style="display: none">
+      <div class="bar-block margin padding container">
+        <a href="javascript:void(0);" onclick="toggleMobileNav()" class="right bar-item hover-text-gray animate-colour circle material-icons" style="font-size: 32px">close</a>
+
+        <div style="width: 300px">
+          <a href="annekset.html" class="bar-item margin hover-text-gray text-white animate-colour">Annekset</a>
+          <a href="5kanten.html" class="bar-item margin hover-text-gray text-white animate-colour">5 Kanten</a>
+
+          <a href="om-grostedet9.html" class="bar-item margin hover-text-gray text-white animate-colour">Om Grostedet9</a>
+          <a href="kontakt.html" class="bar-item margin hover-text-gray text-white animate-colour">Kontakt</a>
+          <a href="#" class="bar-item margin hover-text-gray text-white animate-colour"><i class="fab fa-facebook" style="font-size: 24px"></i></a>
+        </div>
       </div>
     </header>
 
@@ -164,7 +190,7 @@
   <footer class="bar-block padding-32 content">
     <div class="row padding-16 container margin">
       <div class="col l4 m4 s12">
-        <a href="index.html" class="bar-item margin bold">Grostedet9</a>
+        <a href="index.html" class="bar-item margin bold text-yellow">Grostedet9</a>
         <p class="bar-item margin">
           Birgit Bengtsen <br>
           CVR: 99988877 <br>
@@ -191,10 +217,27 @@
   <hr class="content">
 
   <footer class="bar content">
-    <div class="center">
+    <div class="center container">
       <p>Copyright © 2018 Grostedet9 · Alle rettigheder forbeholdes.</p>
     </div>
   </footer>
+
+  <script>
+    // Change navBar
+    function toggleMobileNav() {
+      let navMobile = document.getElementById("navMobile");
+      let navIcon = document.getElementById("navIcon");
+
+      if (navMobile.style.display == "none") {
+        navMobile.style.width = "100%";
+        navMobile.style.display = "block";
+      }
+      else {
+        navMobile.style.display = "none";
+      }
+      navIcon.classList.toggle("open");
+    }
+  </script>
 
   <script>
     // Slideshow

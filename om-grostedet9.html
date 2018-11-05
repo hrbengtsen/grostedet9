@@ -35,12 +35,39 @@
             <a href="kontakt.html" class="bar-item margin hover-text-gray text-white animate-colour">Kontakt</a>
             <a href="#" class="bar-item margin hover-text-gray text-white animate-colour"><i class="fab fa-facebook" style="font-size: 24px"></i></a>
           </div>
+
+          <!-- Custom animated hamburger with styles to #navIcon & span - for mobile nav -->
+          <a href="javascript:void(0);" onclick="toggleMobileNav()" class="right bar-item margin animate-colour hide-large yellow circle">
+            <div id="navIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+          </a>
+      </div>
+    </header>
+
+    <!-- Extra mobile nav -->
+    <header id="navMobile" class="hide-large content sidebar animate-fromRight yellow" style="display: none">
+      <div class="bar-block margin padding container">
+        <a href="javascript:void(0);" onclick="toggleMobileNav()" class="right bar-item hover-text-gray animate-colour circle material-icons" style="font-size: 32px">close</a>
+
+        <div style="width: 300px">
+          <a href="annekset.html" class="bar-item margin hover-text-gray text-white animate-colour">Annekset</a>
+          <a href="5kanten.html" class="bar-item margin hover-text-gray text-white animate-colour">5 Kanten</a>
+
+          <a href="om-grostedet9.html" class="bar-item margin hover-text-gray text-red animate-colour">Om Grostedet9</a>
+          <a href="kontakt.html" class="bar-item margin hover-text-gray text-white animate-colour">Kontakt</a>
+          <a href="#" class="bar-item margin hover-text-gray text-white animate-colour"><i class="fab fa-facebook" style="font-size: 24px"></i></a>
+        </div>
       </div>
     </header>
 
     <div class="content" style="padding: 160px 16px 0px; left: 0">
       <div class="padding">
-        <h2>Om Grostedet9</h2>
+        <h2 class="hide-small">Om Grostedet9</h2>
+        <h3 class="hide-large hide-medium">Om Grostedet9</h3>
         <h4>Få mere at vide om stedet og udforsk<br>
         mulighederne både på stedet samt<br>
         i omegnen.</h4>
@@ -72,7 +99,7 @@
 
     <div class="row-padding margin">
       <div class="col l6 m6 s12">
-        <img class="image round animate-shadow" src="img/trampolin.jpg" alt="#">
+        <img class="image round animate-shadow margin-bottom" src="img/trampolin.jpg" alt="#">
       </div>
 
       <div class="col l6 m6 s12">
@@ -82,7 +109,7 @@
 
     <div class="row-padding margin">
       <div class="col l6 m6 s12">
-        <img class="image round animate-shadow" src="img/shelter1.jpg" alt="#">
+        <img class="image round animate-shadow margin-bottom" src="img/shelter1.jpg" alt="#">
       </div>
 
       <div class="col l6 m6 s12">
@@ -94,7 +121,7 @@
   <!-- Værelser spotlight -->
   <div class="content section">
     <h3 class="center">Moderne værelser</h3>
-    <p class="center">Grostedet 9 tilbyder nye og moderne værelser med alt nødvendigt udstyr.</p>
+    <p class="center container">Grostedet 9 tilbyder nye og moderne værelser med alt nødvendigt udstyr.</p>
 
     <div class="row-padding">
       <!-- Annekset -->
@@ -158,7 +185,7 @@
   <footer class="bar-block padding-32 content">
     <div class="row padding-16 container margin">
       <div class="col l4 m4 s12">
-        <a href="index.html" class="bar-item margin bold">Grostedet9</a>
+        <a href="index.html" class="bar-item margin bold text-yellow">Grostedet9</a>
         <p class="bar-item margin">
           Birgit Bengtsen <br>
           CVR: 99988877 <br>
@@ -185,9 +212,26 @@
   <hr class="content">
 
   <footer class="bar content">
-    <div class="center">
+    <div class="center container">
       <p>Copyright © 2018 Grostedet9 · Alle rettigheder forbeholdes.</p>
     </div>
   </footer>
+
+  <script>
+    // Change navBar
+    function toggleMobileNav() {
+      let navMobile = document.getElementById("navMobile");
+      let navIcon = document.getElementById("navIcon");
+
+      if (navMobile.style.display == "none") {
+        navMobile.style.width = "100%";
+        navMobile.style.display = "block";
+      }
+      else {
+        navMobile.style.display = "none";
+      }
+      navIcon.classList.toggle("open");
+    }
+  </script>
 </body>
 </html>
