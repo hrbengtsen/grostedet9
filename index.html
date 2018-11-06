@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Grostedet9</title>
+  <title>Grostedet9 - Velkommen</title>
 
   <!-- Import Google Fonts, Icons & simpleUI CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -14,10 +14,13 @@
   <link type="text/css" rel="stylesheet" href="css/simpleUI-colour.css"/>
   <link type="text/css" rel="stylesheet" href="css/simpleUI-animation.css"/>
 
+  <!-- For facebook logo -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
+  <!-- Fullscreen hero with content -->
   <main class="hero">
+    <!-- Reg header -->
     <header class="fixed-top">
       <div class="bar text-white padding">
           <a href="index.html" class="bar-item margin bold bottombar border-yellow" style="font-size: 18px">Grostedet<span class="text-yellow">9</span></a>
@@ -48,7 +51,7 @@
       </div>
     </header>
 
-    <!-- Extra mobile nav -->
+    <!-- Mobile header -->
     <header id="navMobile" class="hide-large content sidebar animate-fromRight yellow" style="display: none">
       <div class="bar-block margin padding container">
         <a href="javascript:void(0);" onclick="toggleMobileNav()" class="right bar-item hover-text-gray animate-colour circle material-icons" style="font-size: 32px">close</a>
@@ -64,8 +67,10 @@
       </div>
     </header>
 
-    <div class="content animate-fadeInUp" style="padding: 200px 16px 0px; left: 0">
+    <!-- Main contents -->
+    <div class="content animate-fadeInUp" style="padding: 160px 16px 0px; left: 0">
       <div class="padding hide-small gray-dark-opacity round">
+        <h5 class="opacity-min">Velkommen til Grostedet 9</h5>
         <h2>Bed & Breakfast<br> fra 300 kr. per nat</h2>
         <a href="kontakt.html"><button class="button padding-large red round animate-colour hover-yellow">Bestil ferie</button></a>
         <a href="om-grostedet9.html"><button class="button padding-large yellow round margin-left animate-colour hover-red">Udforsk stedet</button></a>
@@ -74,6 +79,7 @@
       </div>
 
       <div class="padding hide-large hide-medium gray-dark-opacity round">
+        <h5 class="opacity-min">Velkommen til Grostedet 9</h5>
         <h3>Bed & Breakfast<br> fra 300 kr. per nat</h3>
         <a href="kontakt.html"><button class="button padding-large yellow round animate-colour hover-red">Bestil ferie</button></a>
         <p class="sectionTop large">Været her før? <a href="#" class="text-yellow animate-colour hover-text-red">Anmeld os</a></p>
@@ -81,7 +87,7 @@
     </div>
   </main>
 
-  <!-- Rabat -->
+  <!-- Discount -->
   <div class="content section">
     <div class="row-padding margin">
       <div class="col l12 m12 s12">
@@ -107,7 +113,7 @@
     </div>
   </div>
 
-  <!-- Værelser spotlight -->
+  <!-- Room spotlight -->
   <div class="content section">
     <h3 class="center">Leje Muligheder</h3>
     <p class="center container">Grostedet 9 tilbyder 2 muligheder for leje af bolig.</p>
@@ -121,11 +127,11 @@
           </a>
 
           <div class="row container">
-            <p class="col l6 m6 s6 bold"><a href="annekset.html" class="animate-colour hover-text-red">Annekset</a></p>
+            <p class="col l6 m6 s6 bold"><a href="annekset.html" class="animate-colour text-yellow hover-text-red">Annekset</a></p>
             <p class="col l6 m6 s6 right-align">fra 300 DKK per nat</p>
           </div>
 
-          <div class="row container">
+          <div class="row container margin-bottom">
             <p class="col l6 m6 s6" style="margin: 0">2 personer</p>
             <p class="col l6 m6 s6 right-align" style="margin: 0">15 m2</p>
           </div>
@@ -140,7 +146,7 @@
           </a>
 
           <div class="row container">
-            <p class="col l6 m6 s6 bold"><a href="5kanten.html" class="animate-colour hover-text-red">5 Kanten</a></p>
+            <p class="col l6 m6 s6 bold"><a href="5kanten.html" class="animate-colour text-yellow hover-text-red">5 Kanten</a></p>
             <p class="col l6 m6 s6 right-align">fra 450 DKK per nat</p>
           </div>
 
@@ -153,7 +159,7 @@
     </div>
   </div>
 
-  <!-- Omgivelser (afstande) -->
+  <!-- Distances -->
   <div class="content section">
     <!-- Stedet -->
     <div class="row-padding margin">
@@ -167,7 +173,7 @@
     </div>
   </div>
 
-  <!-- Kort -->
+  <!-- Map -->
   <div class="content section">
     <div class="row-padding margin">
       <div class="col l12 m12 s12">
@@ -188,9 +194,9 @@
         <a href="index.html" class="bar-item margin bold text-yellow">Grostedet9</a>
         <p class="bar-item margin">
           Birgit Bengtsen <br>
-          CVR: 99988877 <br>
           Grostedet 9 <br>
           8400 Ebeltoft <br>
+          Femmøller strand <br>
         </p>
       </div>
 
@@ -217,6 +223,7 @@
     </div>
   </footer>
 
+  <!-- JScript for dynamic nav -->
   <script>
     // Change navBar
     function toggleMobileNav() {

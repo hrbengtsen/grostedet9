@@ -14,10 +14,13 @@
   <link type="text/css" rel="stylesheet" href="css/simpleUI-colour.css"/>
   <link type="text/css" rel="stylesheet" href="css/simpleUI-animation.css"/>
 
+  <!-- For facebook logo -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
+  <!-- Hero with content -->
   <main class="om-hero">
+    <!-- Reg header -->
     <header class="fixed-top">
       <div class="bar text-white padding">
           <a href="index.html" class="bar-item margin bold bottombar border-yellow" style="font-size: 18px">Grostedet<span class="text-yellow">9</span></a>
@@ -48,7 +51,7 @@
       </div>
     </header>
 
-    <!-- Extra mobile nav -->
+    <!-- Mobile header -->
     <header id="navMobile" class="hide-large content sidebar animate-fromRight yellow" style="display: none">
       <div class="bar-block margin padding container">
         <a href="javascript:void(0);" onclick="toggleMobileNav()" class="right bar-item hover-text-gray animate-colour circle material-icons" style="font-size: 32px">close</a>
@@ -64,6 +67,7 @@
       </div>
     </header>
 
+    <!-- Main contents -->
     <div class="content" style="padding: 160px 16px 0px; left: 0">
       <div class="padding">
         <h2 class="hide-small">Om Grostedet9</h2>
@@ -75,50 +79,52 @@
     </div>
   </main>
 
-  <!-- Skøn natur -->
+  <!-- Discover 1 - Nature -->
   <div class="content section">
     <div class="row-padding margin">
       <div class="col l12 m12 s12">
         <h3 class="subSection">Skøn natur</h3>
         <p>Grostedet 9 ligger i hjertet af Mols Bjerge med skøn natur til alle sider.</p>
-        <div class="natur round">
+        <div class="display-container">
+          <div class="siema round" style="height: 350px;">
+            <div class="natur"></div>
+            <div class="stedet"></div>
+          </div>
 
+          <button class="prev button hover-gray-dark-opacity round text-white animate-colour material-icons display-left padding-48 xxlarge">keyboard_arrow_left</button>
+          <button class="next button hover-gray-dark-opacity round text-white animate-colour material-icons display-right padding-48 xxlarge">keyboard_arrow_right</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Aktiviteter -->
+  <!-- Discover 2 - Activities -->
   <div class="content section">
     <div class="row-padding margin">
       <div class="col l12 m12 s12">
         <h3 class="subSection">Sjove Aktiviteter</h3>
-        <p>Grostedet 9 tilbyder alt ligefra en trampolin og en sandkasse til et hyggeligt shelter.</p>
+        <p>Grostedet 9 tilbyder fri afbenyttelse af alt ligefra en trampolin til et hyggeligt shelter.</p>
       </div>
     </div>
 
     <div class="row-padding margin">
-      <div class="col l6 m6 s12">
-        <img class="image round animate-shadow margin-bottom" src="img/trampolin.jpg" alt="#">
-      </div>
+      <div class="col l12 m12 s12">
+        <div class="display-container">
+          <div class="siema2 round" style="height: 350px;">
+            <div class="shelter2"></div>
+            <div class="shelter1"></div>
+            <div class="trampolin"></div>
+            <div class="sandkasse"></div>
+          </div>
 
-      <div class="col l6 m6 s12">
-        <img class="image round animate-shadow" src="img/sandkasse.jpg" alt="#">
-      </div>
-    </div>
-
-    <div class="row-padding margin">
-      <div class="col l6 m6 s12">
-        <img class="image round animate-shadow margin-bottom" src="img/shelter1.jpg" alt="#">
-      </div>
-
-      <div class="col l6 m6 s12">
-        <img class="image round animate-shadow" src="img/shelter2.jpg" alt="#">
+          <button class="prev2 button hover-gray-dark-opacity round text-white animate-colour material-icons display-left padding-48 xxlarge">keyboard_arrow_left</button>
+          <button class="next2 button hover-gray-dark-opacity round text-white animate-colour material-icons display-right padding-48 xxlarge">keyboard_arrow_right</button>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Værelser spotlight -->
+  <!-- Room spotlight -->
   <div class="content section">
     <h3 class="center">Moderne værelser</h3>
     <p class="center container">Grostedet 9 tilbyder nye og moderne værelser med alt nødvendigt udstyr.</p>
@@ -132,8 +138,8 @@
           </a>
 
           <div class="row container">
-            <p class="col l6 m6 s6 bold"><a href="annekset.html" class="animate-colour hover-text-red">Annekset</a></p>
-            <p class="col l6 m6 s6 right-align">fra 300 kr. DKK per nat</p>
+            <p class="col l6 m6 s6 bold"><a href="annekset.html" class="animate-colour text-yellow hover-text-red">Annekset</a></p>
+            <p class="col l6 m6 s6 right-align">fra 300 DKK per nat</p>
           </div>
         </div>
       </div>
@@ -146,28 +152,35 @@
           </a>
 
           <div class="row container">
-            <p class="col l6 m6 s6 bold"><a href="5kanten.html" class="animate-colour hover-text-red">5 Kanten</a></p>
-            <p class="col l6 m6 s6 right-align">fra 450 kr. DKK per nat</p>
+            <p class="col l6 m6 s6 bold"><a href="5kanten.html" class="animate-colour text-yellow hover-text-red">5 Kanten</a></p>
+            <p class="col l6 m6 s6 right-align">fra 450 DKK per nat</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Afstande -->
+  <!-- Discover 3 - Distances -->
   <div class="content section">
     <div class="row-padding margin">
       <div class="col l12 m12 s12">
         <h3 class="subSection">Korte Afstande</h3>
-        <p>Området ligger nær Ebeltoft samt i gå afstand til femmøller strand.</p>
-        <div class="strand round">
+        <p>Området ligger nær Ebeltoft samt i gå afstand til købmand og femmøller strand.</p>
+        <div class="display-container">
+          <div class="siema3 round" style="height: 350px;">
+            <div class="strand"></div>
+            <div class="strand2"></div>
+            <div class="strand3"></div>
+          </div>
 
+          <button class="prev3 button hover-gray-dark-opacity round text-white animate-colour material-icons display-left padding-48 xxlarge">keyboard_arrow_left</button>
+          <button class="next3 button hover-gray-dark-opacity round text-white animate-colour material-icons display-right padding-48 xxlarge">keyboard_arrow_right</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Kort -->
+  <!-- Map -->
   <div class="content section">
     <div class="row-padding margin">
       <div class="col l12 m12 s12">
@@ -188,9 +201,9 @@
         <a href="index.html" class="bar-item margin bold text-yellow">Grostedet9</a>
         <p class="bar-item margin">
           Birgit Bengtsen <br>
-          CVR: 99988877 <br>
           Grostedet 9 <br>
           8400 Ebeltoft <br>
+          Femmøller strand <br>
         </p>
       </div>
 
@@ -217,6 +230,38 @@
     </div>
   </footer>
 
+  <!-- Siema slideshow -->
+  <script src="siema.min.js"></script>
+  <script>
+    // Siema for nature
+    const mySiema = new Siema({
+      selector: '.siema',
+      loop: true,
+      duration: 300
+    });
+    document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+    document.querySelector('.next').addEventListener('click', () => mySiema.next());
+
+    // Siema for activities
+    const mySiema2 = new Siema({
+      selector: '.siema2',
+      loop: true,
+      duration: 300
+    });
+    document.querySelector('.prev2').addEventListener('click', () => mySiema2.prev());
+    document.querySelector('.next2').addEventListener('click', () => mySiema2.next());
+
+    // Siema for distances
+    const mySiema3 = new Siema({
+      selector: '.siema3',
+      loop: true,
+      duration: 300
+    });
+    document.querySelector('.prev3').addEventListener('click', () => mySiema3.prev());
+    document.querySelector('.next3').addEventListener('click', () => mySiema3.next());
+  </script>
+
+  <!-- JScript for dynamic nav -->
   <script>
     // Change navBar
     function toggleMobileNav() {

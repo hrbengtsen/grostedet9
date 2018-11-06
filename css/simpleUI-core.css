@@ -878,7 +878,7 @@ hr.content {
     margin-bottom: 100px!important
 }
 .sectionTop {
-    margin-top: 100px!important
+    margin-top: 90px!important
 }
 .sectionSide {
     margin-left: 100px;
@@ -957,14 +957,14 @@ hr.content {
 .hero {
   background-image: url("../img/hero.jpg");
   background-size: cover;
-  background-position: 50% 80%;
+  background-position: 50% 75%;
   height: 100%;
   color: #fff
 }
 .kontakt-hero {
   background-image: url("../img/kontakt-hero.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 50% 58%;
   height: 600px;
   color: #fff
 }
@@ -1004,20 +1004,54 @@ hr.content {
   height: 350px;
   color: #fff
 }
+/* Siema background slideshow */
+.trampolin {
+  background-image: url("../img/trampolin.jpg");
+  background-size: cover;
+  background-position: 50% 65%;
+  height: 350px;
+  color: #fff
+}
+.sandkasse {
+  background-image: url("../img/sandkasse.jpg");
+  background-size: cover;
+  background-position: 50% 65%;
+  height: 350px;
+  color: #fff
+}
+.shelter1 {
+  background-image: url("../img/shelter1.jpg");
+  background-size: cover;
+  background-position: 50% 65%;
+  height: 350px;
+  color: #fff
+}
+.shelter2 {
+  background-image: url("../img/shelter2.jpg");
+  background-size: cover;
+  background-position: 50% 65%;
+  height: 350px;
+  color: #fff
+}
+/* Num 2 */
 .strand {
   background-image: url("../img/strand.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 50% 65%;
   height: 350px;
   color: #fff
 }
-.kort {
-  background-image: url("../img/kort.png");
+.strand2 {
+  background-image: url("../img/strand2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 50% 65%;
   height: 350px;
   color: #fff
 }
-.anneksSlide {
-  display: none
+.strand3 {
+  background-image: url("../img/strand3.jpg");
+  background-size: cover;
+  background-position: 50% 65%;
+  height: 350px;
+  color: #fff
 }

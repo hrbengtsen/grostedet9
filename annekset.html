@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Værelser - Annekset</title>
+  <title>Grostedet9 - Annekset</title>
 
   <!-- Import Google Fonts, Icons & simpleUI CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -14,10 +14,13 @@
   <link type="text/css" rel="stylesheet" href="css/simpleUI-colour.css"/>
   <link type="text/css" rel="stylesheet" href="css/simpleUI-animation.css"/>
 
+  <!-- For facebook logo -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
+  <!-- Hero with content -->
   <main class="annekset">
+    <!-- Reg header -->
     <header class="fixed-top">
       <div class="bar text-white padding">
           <a href="index.html" class="bar-item margin bold bottombar border-yellow" style="font-size: 18px">Grostedet<span class="text-yellow">9</span></a>
@@ -26,7 +29,7 @@
             <div class="dropdown-hover">
               <a href="#" class="button margin hover-text-gray text-white animate-colour">Værelser<span class="material-icons vert-align">keyboard_arrow_down</span></a>
               <div class="dropdown-content bar-block yellow animate-fadeInDown" style="margin-left: 25px">
-                <a href="annekset.html" class="bar-item margin hover-text-gray text-white animate-colour">Annekset<span class="material-icons vert-align">keyboard_arrow_right</span></a>
+                <a href="annekset.html" class="bar-item margin hover-text-gray text-red animate-colour">Annekset<span class="material-icons vert-align">keyboard_arrow_right</span></a>
                 <a href="5kanten.html" class="bar-item margin hover-text-gray text-white animate-colour">5 Kanten<span class="material-icons vert-align">keyboard_arrow_right</span></a>
               </div>
             </div>
@@ -48,13 +51,13 @@
       </div>
     </header>
 
-    <!-- Extra mobile nav -->
+    <!-- Mobile header -->
     <header id="navMobile" class="hide-large content sidebar animate-fromRight yellow" style="display: none">
       <div class="bar-block margin padding container">
         <a href="javascript:void(0);" onclick="toggleMobileNav()" class="right bar-item hover-text-gray animate-colour circle material-icons" style="font-size: 32px">close</a>
 
         <div style="width: 300px">
-          <a href="annekset.html" class="bar-item margin hover-text-gray text-white animate-colour">Annekset</a>
+          <a href="annekset.html" class="bar-item margin hover-text-gray text-red animate-colour">Annekset</a>
           <a href="5kanten.html" class="bar-item margin hover-text-gray text-white animate-colour">5 Kanten</a>
 
           <a href="om-grostedet9.html" class="bar-item margin hover-text-gray text-white animate-colour">Om Grostedet9</a>
@@ -64,38 +67,42 @@
       </div>
     </header>
 
+    <!-- Main contents -->
     <div class="content" style="padding: 160px 16px 0px; left: 0">
       <div class="padding">
-        <h2>Annekset</h2>
+        <h2 class="hide-small">Annekset</h2>
+        <h3 class="hide-large hide-medium">Annekset</h3>
         <h4>Udforsk hvad 2 personers<br>
         værelset, Annekset, har at tilbyde.</h4>
       </div>
     </div>
   </main>
 
-  <!-- Værelser spotlight -->
+  <!-- Annekset spotlight -->
   <div class="content section">
     <div class="row-padding">
       <!-- Annekset -->
       <div class="col l6 m6 s12">
-        <div class="margin display-container">
-          <img class="image round anneksSlide" src="img/annekset/anneksSlide1.jpg" alt="#">
-          <img class="image round anneksSlide" src="img/annekset/anneksSlide2.jpg" alt="#">
-          <img class="image round anneksSlide" src="img/annekset/anneksSlide3.jpg" alt="#">
-          <img class="image round anneksSlide" src="img/annekset.jpg" alt="#">
+        <div class="display-container margin">
+          <div class="siema round">
+            <div><img class="image" src="img/annekset/anneksSlide1.jpg" alt="#"></div>
+            <div><img class="image" src="img/annekset/anneksSlide2.jpg" alt="#"></div>
+            <div><img class="image" src="img/annekset/anneksSlide3.jpg" alt="#"></div>
+            <div><img class="image" src="img/annekset.jpg" alt="#"></div>
+          </div>
 
-          <button class="button hover-gray-dark-opacity round text-white animate-colour material-icons display-left padding-64 xxlarge" onclick="changeImg(-1)">keyboard_arrow_left</button>
-          <button class="button hover-gray-dark-opacity round text-white animate-colour material-icons display-right padding-64 xxlarge" onclick="changeImg(1)">keyboard_arrow_right</button>
+          <button class="prev button hover-gray-dark-opacity round text-white animate-colour material-icons display-left padding-48 xxlarge">keyboard_arrow_left</button>
+          <button class="next button hover-gray-dark-opacity round text-white animate-colour material-icons display-right padding-48 xxlarge">keyboard_arrow_right</button>
         </div>
       </div>
 
-      <!-- 5 Kanten -->
+      <!-- Search prices for Annekset -->
       <div class="col l6 m6 s12">
         <div class="margin row">
           <p class="bold">Find priser for Annekset</p>
-          <div class="col l6 m6 s12">
-            <select class="select" name="option" id="days">
-              <option value="" disabled selected>Antal dage</option>
+          <div class="col l6 m6 s6">
+            <select class="select text-gray-dark" name="option" id="days">
+              <option value="" disabled selected>dage</option>
               <option value="1">1 dag</option>
               <option value="2">2 dage</option>
               <option value="3">3 dage</option>
@@ -106,9 +113,9 @@
             </select>
           </div>
 
-          <div class="col l6 m6 s12">
-            <select class="select" name="option" id="persons">
-              <option value="" disabled selected>Antal personer</option>
+          <div class="col l6 m6 s6">
+            <select class="select text-gray-dark" name="option" id="persons">
+              <option value="" disabled selected>personer</option>
               <option value="1">1 person</option>
               <option value="2">2 personer</option>
             </select>
@@ -120,52 +127,52 @@
         </div>
 
         <div class="margin margin-top row">
-          <p class="col l6 m6 s12 bold">Pris:</p>
-          <h4 class="col l6 m6 s12" id="priceId">0 kr. DKK</h4>
+          <p class="col l6 m6 s6 bold" style="margin-bottom: 0">Pris:</p>
+          <h4 class="col l6 m6 s6" id="priceId" style="margin-bottom: 0">0 DKK</h4>
         </div>
 
         <div class="margin row">
-          <p><a href="kontakt.html" class="text-yellow animate-colour hover-text-red bold">Book Annekset<span class="material-icons vert-align">keyboard_arrow_right</span></a></p>
+          <p style="margin: 0"><a href="kontakt.html" class="text-yellow animate-colour hover-text-red bold">Book Annekset<span class="material-icons vert-align">keyboard_arrow_right</span></a></p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Værelser spotlight -->
+  <!-- Facilities -->
   <div class="content section">
     <h3 class="center">Faciliteter</h3>
     <p class="center">Anneksets forskellige egenskaber.</p>
 
     <div class="row-padding center">
       <div class="col l4 m4 s6">
-        <p>15 m2</p>
+        <p><span class="material-icons vert-align">home</span> 15 m2</p>
       </div>
 
       <div class="col l4 m4 s6">
-        <p>2 senge</p>
+        <p><span class="material-icons vert-align">hotel</span> 2 senge</p>
       </div>
 
-      <div class="col l4 m4 s6">
-        <p>1 bad</p>
+      <div class="col l4 m4 s12">
+        <p><span class="material-icons vert-align">wc</span> 1 bad</p>
       </div>
     </div>
 
     <div class="row-padding center">
       <div class="col l4 m4 s6">
-        <p>Mikroovn + køleskab</p>
+        <p><span class="material-icons vert-align">kitchen</span> Mindre køkken</p>
       </div>
 
       <div class="col l4 m4 s6">
-        <p>TV</p>
+        <p><span class="material-icons vert-align">tv</span> TV</p>
       </div>
 
-      <div class="col l4 m4 s6">
-        <p>Wifi</p>
+      <div class="col l4 m4 s12">
+        <p><span class="material-icons vert-align">wifi</span> Wifi</p>
       </div>
     </div>
   </div>
 
-  <!-- Kort -->
+  <!-- Map -->
   <div class="content section">
     <div class="row-padding margin">
       <div class="col l12 m12 s12">
@@ -186,9 +193,9 @@
         <a href="index.html" class="bar-item margin bold text-yellow">Grostedet9</a>
         <p class="bar-item margin">
           Birgit Bengtsen <br>
-          CVR: 99988877 <br>
           Grostedet 9 <br>
           8400 Ebeltoft <br>
+          Femmøller strand <br>
         </p>
       </div>
 
@@ -215,6 +222,18 @@
     </div>
   </footer>
 
+  <!-- Siema slideshow -->
+  <script src="siema.min.js"></script>
+  <script>
+    const mySiema = new Siema({
+      loop: true,
+      duration: 300
+    });
+    document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+    document.querySelector('.next').addEventListener('click', () => mySiema.next());
+  </script>
+
+  <!-- JScript for dynamic nav & searching prices -->
   <script>
     // Change navBar
     function toggleMobileNav() {
@@ -229,29 +248,6 @@
         navMobile.style.display = "none";
       }
       navIcon.classList.toggle("open");
-    }
-  </script>
-
-  <script>
-    // Slideshow
-    let slideIndex = 1;
-    showImg(slideIndex);
-
-    function changeImg(n) {
-      showImg(slideIndex += n);
-    }
-
-    function showImg(n) {
-      let i;
-      let e = document.getElementsByClassName("anneksSlide");
-
-      if (n > e.length) { slideIndex = 1; }
-      else if (n < 1) { slideIndex = e.length; }
-
-      for (i = 0; i < e.length; i++) {
-        e[i].style.display = "none";
-      }
-      e[slideIndex - 1].style.display = "block";
     }
 
     // Search prices
@@ -324,7 +320,7 @@
           }
           break;
       }
-      ePrice.innerHTML = price + " kr. DKK";
+      ePrice.innerHTML = price + " DKK";
     }
   </script>
 </body>
