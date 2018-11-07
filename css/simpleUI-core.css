@@ -878,7 +878,7 @@ hr.content {
     margin-bottom: 100px!important
 }
 .sectionTop {
-    margin-top: 90px!important
+    margin-top: 70px!important
 }
 .sectionSide {
     margin-left: 100px;
@@ -964,7 +964,7 @@ hr.content {
 .kontakt-hero {
   background-image: url("../img/kontakt-hero.jpg");
   background-size: cover;
-  background-position: 50% 58%;
+  background-position: 50% 60%;
   height: 600px;
   color: #fff
 }
